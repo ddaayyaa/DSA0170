@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class bank{
+  private:
+  char name[50];
+  int accno;
+  float amount;
+  public:
+  bank()
+  {
+    cout<<"object created"<<endl;
+  }
+  ~bank() 
+  {
+    cout<<"object destroyed"<<endl;
+  }
+  void read(){
+    cin>>name>>accno>>amount;
+}
+  void print(){
+    cout<<"\tBank details\t"<<endl;
+    cout<<"Name  :"<<name<<endl;
+    cout<<"Accno :"<<accno<<endl;
+    cout<<"Amount:"<<amount<<endl;
+  }
+};
+int main (){
+bank s;
+  s.read();
+  s.print();
+  return 0;
+}
