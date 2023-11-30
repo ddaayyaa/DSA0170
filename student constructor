@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class student { 
+  private:
+  string name;
+  int regno;
+  int m1,m2;
+  int total;
+  float avg;
+ public:
+
+  student(string name1,int num,int n1,int n2){
+    name=name1;
+    regno=num;
+    m1=n1;
+    m2=n2;
+    total=m1+m2;
+    avg=(float)total/2;
+  }
+
+void display(){
+  cout<<"Name: "<<name<<endl;
+  cout<<"Reg no: "<<regno<<endl;
+  cout<<"Marks: "<<m1<<" and "<<m2<<endl;
+  cout<<"Total marks: "<<total<<endl;
+  cout<<"Avg: "<<avg<<endl;
+}
+};
+int main () {
+student mystudent("Daya",1923,10,11);
+mystudent.display();
+  }
