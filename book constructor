@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class book{
+  private:
+  string title;
+  string author;
+  int price;
+public:
+book(string name1,string name2,int rate) {
+  title=name1;
+  author=name2;
+  price=rate;
+}
+void display () {
+  cout<<"title name: "<<title<<endl;
+  cout<<"book author: "<<author<<endl;
+  cout<<"book price: "<<price<<endl;
+}
+};
+int main () {
+  book b1("Dayakar","Star",1000);
+  book b2("daya","hero",150);
+  b1.display();
+  b2.display();
+}
