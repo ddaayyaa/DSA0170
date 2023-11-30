@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main () {
+  int n,sum=0,digit,originalnum;
+  cout<<"";
+  cin>>n;
+  originalnum=n;
+  while(n !=0) {
+   digit=n%10;
+    sum +=digit;
+    n /=10;
+  }
+  
+  if(originalnum%sum==0) {
+    cout<<originalnum<<" is harshad number";
+  } else {
+    cout<<originalnum<<" is not harshad number";
+  }
+  return 0;
+}
