@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int intfactorial(int n){
+  if(n==0 || n==1) {
+    return 1;
+  }
+  return n*intfactorial(n-1);
+}
+double doublefactorial(double a) {
+  if(a==0 ||a==1) {
+    return 1;
+  }
+  return a*doublefactorial(a-1);
+}
+int main () {
+  int n1=5;
+  double n2=6;
+  
+  cout<<"the factorial of "<<n1<<" is "<<intfactorial(n1)<<endl;
+  
+  cout<<"the factorial of "<<n2<<" is "<<doublefactorial(n2)<<endl;
+  return 0;
+}
