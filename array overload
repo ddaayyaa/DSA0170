@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+void array(int arr[],int n) {
+  for(int i=0;i<n;i++) {
+    cout<<arr[i]<<" ";
+  }
+  cout<<endl;
+}
+void array(double arr[],int n) {
+  for(int i=0;i<n;i++) {
+    cout<<arr[i]<<" ";
+  }
+  cout<<endl;
+}
+void array(char arr[], int n) {
+  for(int i=0;i<n;i++) {
+    cout<<arr[i]<<" ";
+  }
+  cout<<endl;
+}
+int main () {
+  int intarr[]={5,6,3,2,4,7};
+  double doublearr[]={2.5,3.4,8.6,4.6,7.9};
+  char chararr[]={'d','a','y','a','k','a','r'};
+  int intn=sizeof(intarr)/sizeof(intarr[0]);
+  double doublen=sizeof(doublearr)/sizeof(doublearr[0]);
+  char charn=sizeof(chararr)/sizeof(chararr[0]);
+  array(intarr,intn);
+  array(doublearr,doublen);
+  array(chararr,charn);
+  return 0;
+}
