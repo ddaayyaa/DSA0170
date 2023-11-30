@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+int power(int base, int exponent) {
+  return pow(base, exponent);
+}
+float power(float base, float exponent) { 
+  return pow(base, exponent); 
+}
+
+int main() { 
+  int baseInt = 2;
+  int exponentInt = 3; 
+  float baseFloat = 2.5;
+  float exponentFloat = 2.0;
+cout << "Power of " << baseInt << " raised to " << exponentInt << " is " << power(baseInt, exponentInt) << endl;
+cout << "Power of " << baseFloat << " raised to " << exponentFloat << " is " << power(baseFloat, exponentFloat) << endl;
+
+return 0;
+}
