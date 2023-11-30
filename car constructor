@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class car{
+  private:
+  string name;
+  string modal;
+  int price;
+
+  public:
+  car(string name1,string name2,int  money){
+    name=name1;
+    modal=name2;
+    price=money;
+  }
+  void display(){
+    cout<<"\tCar details\t"<<endl;
+    cout<<" Car name : "<<name<<endl;
+    cout<<" Car Modal: "<<modal<<endl;
+    cout<<" Car price: "<<price<<endl;
+  }
+};
+int main (){
+  car c1("Rolls Royce","Coupe",30000000);
+  car c2("Range Rovers","Sport Utility",9000000);
+  c1.display();
+  c2.display();
+}
