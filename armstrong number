@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main ()  {
+  int n,rem,sum=0,original;
+  cout<<"";
+  cin>>n;
+  original=n;
+  while( n !=0) {
+    rem=n%10;
+    sum +=rem*rem*rem;
+    n /=10;
+  }
+  if(sum==original) {
+    cout<<"armstrong"<<endl;
+  } else {
+  cout<<"not armstrong"<<endl;
+  }
+  return 0;
+}
