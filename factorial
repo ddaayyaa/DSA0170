@@ -1,0 +1,20 @@
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+   int i,fact=1,number;    
+  cout<<"";    
+ cin>>number;    
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  cout<<"Factorial of " <<number<<" is: "<<fact<<endl;  
+  return 0;  
+}  
+int main () {
+  int n,fact=1;
+  cin>>n;
+  for(int i=1;i<=n;i++) {
+    fact=fact*i;
+  }
+}
