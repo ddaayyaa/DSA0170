@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,i,sum=0,rem;
+  cout<<"";
+  cin>>n;
+  for(i=1;i<=n/2;i++)
+  {
+    rem=n%i;
+    if(rem==0)
+    {
+      sum=sum+i;
+    }
+  }
+    if(sum==n)
+      cout<<"perfect";
+    else
+      cout<<"not perfect";
+    return 0;
+}
