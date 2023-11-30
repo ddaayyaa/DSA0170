@@ -1,0 +1,27 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+void sortarray(int arr[],int n) {
+  sort(arr,arr+n);
+}
+void sortarray(double arr[],int n) {
+  sort(arr,arr+n);
+}
+int main () {
+  int intarr[]={8,6,4,3,7,5};
+  double doublearr[]={8.6,7.5,4.2,5.6,9.4,6.4};
+  int intn=sizeof(intarr)/sizeof(intarr[0]);
+  double doublen=sizeof(doublearr)/sizeof(doublearr[0]);
+  sortarray(intarr,intn);
+  sortarray(doublearr,doublen);
+  for(int i=0;i<intn;i++) {
+    cout<<intarr[i]<<" ";
+  }
+  cout<<endl;
+  for(int i=0;i<doublen;i++) {
+    cout<<doublearr[i]<<" ";
+    
+  }
+  cout<<endl;
+  return 0;
+}
