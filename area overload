@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+float square(float a) {
+  return (a*a);
+}
+float rectangle(float a,float b) {
+  return (a*b);
+}
+float circle(float a) {
+  return (3.14*a*a);
+}
+int main () {
+  float n1=5.8;
+  float n2=3.4,n3=4.2;
+  float n4=6.9;
+  square(n1);
+  rectangle(n2,n3);
+  circle(n4);
+  cout<<"The area of square is: "<<square(n1)<<endl;
+  cout<<"the area of rectangle is: "<<rectangle(n2,n3)<<endl;
+  cout<<"The area of circle is: "<<circle(n4)<<endl;
+  return 0;
+}
